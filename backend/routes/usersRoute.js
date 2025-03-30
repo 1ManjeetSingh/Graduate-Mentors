@@ -59,11 +59,6 @@ router.post("/login", async (req, res) => {
         .status(200)
         .send({ message: "Invalid password", success: false });
     }
-    if (!user.isMember) {
-      return res
-        .status(200)
-        .send({ message: "Get Membership from Customer Service", success: false });
-    }
 
     const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
       expiresIn: "1d",
