@@ -7,7 +7,7 @@ app.use(express.json());
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://graduate-mentors.vercel.app"
+  "https://quiz-application-ebon-eight.vercel.app"
 ];
 
 app.use(cors({
