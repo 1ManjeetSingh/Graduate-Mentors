@@ -1,0 +1,64 @@
+# Root-level ignore
+.DS_Store
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Ignore coverage and build artifacts
+/coverage
+
+# Node modules (common for client and backend)
+**/node_modules
+/.pnp
+.pnp.js
+
+# Logs
+logs
+*.log
+*.log.*
+debug.log*
+
+# Editor and OS-specific files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# client-specific ignore
+client/node_modules
+client/.next
+client/out
+client/.nuxt
+client/.cache
+client/.parcel-cache
+
+# backend-specific ignore
+backend/node_modules
+backend/.pnp
+backend/build
+backend/dist
+backend/tmp
+
+# Ignore lockfiles (optional if you prefer a single lockfile in the root)
+client/package-lock.json
+client/yarn.lock
+backend/package-lock.json
+backend/yarn.lock
+
+# Ignore sensitive env files
+client/.env
+client/.env.local
+client/.env.*.local
+backend/.env
+backend/.env.local
+backend/.env.*.local
