@@ -287,7 +287,7 @@ function WriteExam() {
         )}
 
         {view === "review" && (
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2" style={{height: "72vh", overflow: "auto"}}>
             {questions.map((question, index) => {
               const isCorrect =
                 question.correctOption === selectedOptions[index];
